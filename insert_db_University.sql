@@ -15,10 +15,10 @@ insert into Subjects (Name) values ( 'Biology');
 insert into Subjects (Name) values ('Geography');
 go
 
-insert into Teachers (Name, Salary, Surname) values ('Mallissa', 51, 'Whicher');
-insert into Teachers (Name, Salary, Surname) values ('Eleanora', 31, 'Roderigo');
+insert into Teachers (Name, Salary, Surname) values ('Dave', 51, 'McQueen');
+insert into Teachers (Name, Salary, Surname) values ('Jack', 31, 'Underhill');
 insert into Teachers (Name, Salary, Surname) values ('Royce', 51, 'Meffin');
-insert into Teachers (Name, Salary, Surname) values ('Codee', 85, 'Ivanilov');
+insert into Teachers (Name, Salary, Surname) values ('Samantha', 85, 'Adams');
 insert into Teachers (Name, Salary, Surname) values ('Ethyl', 58, 'Jerzyk');
 insert into Teachers (Name, Salary, Surname) values ('Frannie', 16, 'Damerell');
 insert into Teachers (Name, Salary, Surname) values ('Leonelle', 73, 'Meek');
@@ -73,6 +73,7 @@ insert into Lectures (LectureRoom, SubjectId, TeacherId) values ('ziprasidone hy
 insert into Lectures (LectureRoom, SubjectId, TeacherId) values ('Venlafaxine Hydrochloride', 1, 1);
 insert into Lectures (LectureRoom, SubjectId, TeacherId) values ('Pleo Lat', 1, 12);
 insert into Lectures (LectureRoom, SubjectId, TeacherId) values ('Nystatin', 2, 10);
+insert into Lectures (LectureRoom, SubjectId, TeacherId) values ('Nystatin', 3, 9);
 go
 
 insert into Departments
@@ -103,7 +104,7 @@ insert into Groups (Name, Year, DepartmentId) values ('VPD-011', 5, 14);
 insert into Groups (Name, Year, DepartmentId) values ('PD-014', 4, 6);
 insert into Groups (Name, Year, DepartmentId) values ('KI-21', 1, 5);
 insert into Groups (Name, Year, DepartmentId) values ('QA-25', 2, 9);
-insert into Groups (Name, Year, DepartmentId) values ('QA-22', 3, 4);
+insert into Groups (Name, Year, DepartmentId) values ('PV-114', 3, 4);
 insert into Groups (Name, Year, DepartmentId) values ('KFA-212', 2, 7);
 insert into Groups (Name, Year, DepartmentId) values ('LCA-117', 4, 8);
 insert into Groups (Name, Year, DepartmentId) values ('SAP-567', 4, 3);
