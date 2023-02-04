@@ -116,6 +116,7 @@ insert into Groups (Name, Year, DepartmentId) values ('KOI-232', 4, 7);
 go
 
 insert into GroupsLectures (GroupId, LectureId) values (5, 15);
+insert into GroupsLectures (GroupId, LectureId) values (4, 1);
 insert into GroupsLectures (GroupId, LectureId) values (16, 13);
 insert into GroupsLectures (GroupId, LectureId) values (17, 15);
 insert into GroupsLectures (GroupId, LectureId) values (9, 14);
@@ -132,6 +133,8 @@ insert into GroupsLectures (GroupId, LectureId) values (16, 1);
 insert into GroupsLectures (GroupId, LectureId) values (11, 10);
 insert into GroupsLectures (GroupId, LectureId) values (9, 10);
 insert into GroupsLectures (GroupId, LectureId) values (7, 2);
+insert into GroupsLectures (GroupId, LectureId) values (6, 2);
+insert into GroupsLectures (GroupId, LectureId) values (4, 1);
 insert into GroupsLectures (GroupId, LectureId) values (18, 11);
 insert into GroupsLectures (GroupId, LectureId) values (13, 1);
 insert into GroupsLectures (GroupId, LectureId) values (19, 7);
