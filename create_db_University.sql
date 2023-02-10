@@ -1,6 +1,7 @@
 -- SQL script for creating the Database
 create database University;
 go
+
 use University;
 go
 
@@ -11,6 +12,7 @@ create table Subjects
 	[Name] nvarchar(100) not null unique check([Name] <> ''),
 );
 go
+
 create table Faculties
 (
 	Id int primary key IDENTITY(1,1) NOT NULL,
@@ -18,6 +20,7 @@ create table Faculties
 	Name nvarchar(100) NOT NULL CHECK(Name <> '') UNIQUE
 );
 go
+
 create table Teachers
 (
 	Id int primary key IDENTITY(1,1) NOT NULL,
@@ -26,6 +29,7 @@ create table Teachers
 	Surname nvarchar(max) NOT NULL CHECK(Surname <> '')
 );
 go
+
 create table Departments
 (    
    Id int primary key identity(1, 1),
@@ -34,6 +38,7 @@ create table Departments
    FacultyId int not null foreign key references Faculties(Id)
 );
 go
+
 create table Groups
 (
 	Id int primary key identity(1,1),
@@ -42,6 +47,7 @@ create table Groups
 	DepartmentId int not null foreign key references Departments(Id)
 );
 go
+
 create table Lectures
 (
    Id int primary key identity(1,1) not null,
@@ -50,6 +56,7 @@ create table Lectures
    TeacherId int not null foreign key references Teachers(Id),
 );
 go
+
 create table GroupsLectures
 (
 	Id int primary key identity(1,1),
@@ -57,6 +64,7 @@ create table GroupsLectures
 	LectureId int not null foreign key references Lectures(Id),
 );
 go
+
 create Table Curators
 (
    Id int primary key identity(1,1) not null,
@@ -64,6 +72,7 @@ create Table Curators
    Surname nvarchar(max) not null check(Surname <> '')
 )
 go
+
 create table GroupsCurators
 (
    Id int primary key identity(1, 1),
